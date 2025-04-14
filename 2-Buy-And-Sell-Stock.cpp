@@ -8,10 +8,10 @@ int main(){
         cin>>arr[i];
     }
     // two pointer approach - O(N)
-    int l=0,r=l+1;int ans=0;
+    int l=0,r=1;int ans=0;
     while(r<n){
         if(arr[l]>arr[r]){
-            l++;
+            l=r;
             r++;
         }
         else{
